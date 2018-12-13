@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+        
+<body>  
+    <div class="form-container">
+        <h1 id="siteTitle">Welcome to the ultimate favorite color tracker!</h1>
+        <hr>
+        <h2 class="form-header">Please Login</h2>
+        <form method="POST" action="/login">
+            <label>Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <label>Password:</label>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" id="login" value="Login">
+        </form>
+    </div>
+    <hr>
+    <p id='noAccount'>Don't have an account?</p>
+    <a class="topLink" id="signUpLink" href="/signup">Sign Up</a>
+    <span id="loginMsg">
+    <%= msg %>
+    </span>
+</body>
+        
+</html>
